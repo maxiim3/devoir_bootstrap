@@ -1,0 +1,70 @@
+/* SETUP */
+
+:root {
+  scroll-behavior: smooth;
+  width: 100%;
+  height: 100%;
+}
+
+/* BASED COLOR VARIABLES */
+:root {
+  --dark-first: #000000;
+  --dark-second: #14213d;
+  --pop-first: #fca311;
+  --pop-second: #fb8500;
+  --light-first: #e5e5e5;
+  --light-second: #ffffff;
+}
+
+/* ANIMATION */
+
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  75%{
+    transform: translateX(0);
+
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* BODY */
+
+body {
+  width: 100vw;
+  height: 500vh;
+  background-color: #ff7700;
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1600 900'%3E%3Cpolygon fill='%23a65353' points='957 450 539 900 1396 900'/%3E%3Cpolygon fill='%23a12d2d' points='957 450 872.9 900 1396 900'/%3E%3Cpolygon fill='%23cd4851' points='-60 900 398 662 816 900'/%3E%3Cpolygon fill='%23c26d71' points='337 900 398 662 816 900'/%3E%3Cpolygon fill='%23d14561' points='1203 546 1552 900 876 900'/%3E%3Cpolygon fill='%23af5f6c' points='1203 546 1552 900 1162 900'/%3E%3Cpolygon fill='%23ce497b' points='641 695 886 900 367 900'/%3E%3Cpolygon fill='%23a53d63' points='587 900 641 695 886 900'/%3E%3Cpolygon fill='%23c63091' points='1710 900 1401 632 1096 900'/%3E%3Cpolygon fill='%23a76b8d' points='1710 900 1401 632 1365 900'/%3E%3Cpolygon fill='%23c588c5' points='1210 900 971 687 725 900'/%3E%3Cpolygon fill='%23752475' points='943 900 1210 900 971 687'/%3E%3C/svg%3E");
+background-attachment: fixed;
+background-size: cover;
+  color: black;
+}
+
+/* HEADER */
+
+header {
+  background-color: var(--dark-first);
+  animation: 1s ease-out 0s 1 slideInFromLeft;
+  position: sticky;
+  top: 0px;
+}
+  .img-fluid {
+    min-width: 45px;
+    max-width: 100px;
+  }
+  .nav-link {
+    color: var(--light-first);
+  }
+    .nav-link:hover{
+      color: var(--pop-first);
+    }
+
+/* MAIN */
+
+h2 {
+  color: var(--pop-second);
+}

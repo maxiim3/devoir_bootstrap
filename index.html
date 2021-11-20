@@ -1,101 +1,168 @@
 <!DOCTYPE html>
 <html lang="fr">
+
   <head>
-    <!-- ================================================ DATAS -->
+    <!--  .... DATAS -->
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mon Site</title>
-    <!-- ================================================ Styleshets -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
-      crossorigin="anonymous"
-    />
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="/assets/img/corporate-logo-design-branding-identity-tv-film-production-company-dark-room-slovakia-3.jpeg" type="image/x-icon"/>
+    <!-- .... CSS -->
+    <link  href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"/>
     <link rel="stylesheet" href="/CSS/style.css" />
   </head>
 
+
+
   <body>
-    <header>
+
+
+    <!-- ........ HEADER ........ -->
+    <header class="d-flex justify-content-between">
+        <!-- LOGO -->
       <div id="logo">
-        <img src="/assets/img/logo.jpg" alt="Logo" />
+        <img src="/assets/img/corporate-logo-design-branding-identity-tv-film-production-company-dark-room-slovakia-3.jpeg"  alt="Logo" class="img-fluid"  />
       </div>
-      <nav>
-        <ul>
-          <li><a href="#home">Accueil</a></li>
-          <li><a href="#presentation">Présentation</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
+        <!--  NAV LINKS-->
+      <ul class="nav align-items-center">
+        <li class="nav-item"><a class="nav-link" href="#home">    Présentation</a></li>
+        <li class="nav-item"><a class="nav-link" href="#services">Services    </a></li>
+        <li class="nav-item"><a class="nav-link" href="#estimate">Devis       </a></li>
+        <li class="nav-item"><a class="nav-link" href="#info">    Informations</a></li>
+      </ul>
     </header>
 
+
+    <!-- ........ MAIN CONTAINER ........ -->
     <main>
+
+
+      <!-- SECTION PRESENTATION -->
       <section id="home">
-        <h1>Bienvenue sur ce site</h1>
+        <article class="">
+          <h1>Votre solution Audio-Visuelle</h1>
+
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus accusantium nulla sapiente eveniet fuga commodi aspernatur ipsum quasi ipsam molestias quo, neque animi? Aut labore atque nisi numquam voluptatum obcaecati nesciunt ab, quia modi minima laudantium veniam odit temporibus nihil doloremque quam similique harum optio repellendus, vitae necessitatibus libero. Dignissimos distinctio id impedit error temporibus nam autem eaque ex eos.</p>
+        </article>
+
+        <aside class="">
+            <div class="card card-01">
+              <figure>
+                <img src="" alt="">
+                <figcaption></figcaption>
+              </figure>
+            </div>
+            <div class="card card-03">
+              <figure>
+                <img src="" alt="">
+                <figcaption></figcaption>
+              </figure>
+            </div>
+            <div class="card card-02">
+              <figure>
+                <img src="" alt="">
+                <figcaption></figcaption>
+              </figure>
+            </div>
+        </aside>
+
       </section>
-      <section id="presentation">
-        <h2>Qui sommes-nous ?</h2>
-        <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore
-          laborum voluptatem soluta quibusdam? Quibusdam cupiditate voluptas
-          omnis odit excepturi sit eaque eligendi impedit voluptate non a quas,
-          quod nulla iure!
-        </p>
-      </section>
+
+
+      <!-- SECTION SERVICES -->
       <section id="services">
-        <h2>Nos prestations</h2>
-        <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore
-          laborum voluptatem soluta quibusdam? Quibusdam cupiditate voluptas
-          omnis odit excepturi sit eaque eligendi impedit voluptate non a quas,
-          quod nulla iure!
-        </p>
+        <div class="gallery"><figure class=""><figcaption></figcaption></figure></div>
+        <div class="service-cards">
+          <figure>
+            <figcaption>Soborisation</figcaption>
+          </figure>
+          <figure>
+            <figcaption>Lumiere</figcaption>
+          </figure>
+          <figure>
+            <figcaption>Captation</figcaption>
+          </figure>
+          <figure>
+            <figcaption>Montage</figcaption>
+          </figure>
+        </div>
       </section>
-      <section id="contact">
-        <h2>Nous contacter</h2>
-        <form action="">
+
+
+      <!-- SECTION DEVIS -->
+      <section id="estimate">
+        <form action="POST">
           <fieldset>
-            <legend>Informations</legend>
-            <div>
-              Civilités:
-              <label
-                >Monsieur: <input checked type="radio" name="civ" value="mr"
-              /></label>
-              <label
-                >Madame: <input type="radio" name="civ" value="mme"
-              /></label>
-            </div>
-            <div>
-              <label
-                >Nom:
-                <input name="lastname" type="text" placeholder="Votre nom"
-              /></label>
-              <label
-                >Prénom:
-                <input name="firstname" type="text" placeholder="Votre prénom"
-              /></label>
-            </div>
+            <legend>Vos Coordonnées</legend>
+            <label>Nom : <input placeholder="Nom" required  type="text" name="form-name" value=""></label>
+            <label>Prénom : <input placeholder="Prénom" required  type="text" name="form-first-name" value=""></label>
+            <label>Mail : <input placeholder="Email" required  type="email" name="form-mail" value=""></label>
+            <label>Tel. : <input placeholder="Téléphone" required  type="tel" size="10" name="form-phone" value=""></label>
           </fieldset>
+
           <fieldset>
-            <legend>Message</legend>
-            <label for="subject">Sujet du message:</label>
-            <input
-              name="sub"
-              id="subject"
-              type="text"
-              placeholder="Sujet du message"
-            />
-            <label for="mess">Votre message:</label>
-            <textarea name="message" id="mess" cols="30" rows="10"></textarea>
+            <legend>Prestation</legend>
+              <div class="checkbox checkbox1">
+                <label><input type="checkbox" name="sonorisation" id="">Sonorisation</label>
+              </div>
+              <div class="checkbox checkbox2">
+                <label><input type="checkbox" name="lumiere" id="">Lumiere</label>
+              </div>
+              <div class="checkbox checkbox3">
+                <label><input type="checkbox" name="captation" id="">Captation</label>
+              </div>
+              <div class="checkbox checkbox4">
+                <label><input type="checkbox" name="montage" id="">Montage</label>
+              </div>
           </fieldset>
-          <button type="submit">Envoyer</button>
-          <button type="reset">Effacer</button>
+
+          <fieldset>
+            <legend>Commentaires</legend>
+            <textarea id="story" name="story" rows="5" cols="33" placeholder="Entrez votrs commentaire..." autocapitalize="sentences" maxlength="500"></textarea>
+          </fieldset>
         </form>
       </section>
-    </main>
+
+
+      <!-- SECTION INFOS ET CONTACTS -->
+      <section class="info">
+        <h2>Informations</h2>
+        <div class="contact-us">
+          <figure>
+            <figcaption></figcaption>
+          </figure>
+          <aside></aside>
+        </div>
+        <div class="find-us">
+          <figure>
+            <figcaption></figcaption>
+            <aside></aside>
+          </figure>
+        </div>
+      </section>
+</main>
+
+
+
 
     <footer>
       <p>© DWAPS Michael - 2021</p>
+      <div>
+        Icons made by
+        <a href="https://www.flaticon.com/authors/secret-studio" title="Secret Studio">
+          Secret Studio
+        </a>
+        from
+        <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com </a>
+      </div>
+      <div>
+        Logo Image source:
+        <a href="http://https://www.logo-designer.co/dev/lights-camera-action-dark-room/">
+          Logo Designer
+        </a>
+      </div>
     </footer>
   </body>
 </html>
