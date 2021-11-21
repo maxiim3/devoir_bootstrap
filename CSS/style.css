@@ -4,10 +4,7 @@
   scroll-behavior: smooth;
   width: 100%;
   height: 100%;
-}
-
-/* BASED COLOR VARIABLES */
-:root {
+  /* BASED COLOR VARIABLES */
   --dark-first: #000000;
   --dark-second: #14213d;
   --pop-first: #fca311;
@@ -32,39 +29,172 @@
   }
 }
 
-/* BODY */
+/* GENERAL */
 
 body {
-  width: 100vw;
-  height: 500vh;
-  background-color: #ff7700;
-background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1600 900'%3E%3Cpolygon fill='%23a65353' points='957 450 539 900 1396 900'/%3E%3Cpolygon fill='%23a12d2d' points='957 450 872.9 900 1396 900'/%3E%3Cpolygon fill='%23cd4851' points='-60 900 398 662 816 900'/%3E%3Cpolygon fill='%23c26d71' points='337 900 398 662 816 900'/%3E%3Cpolygon fill='%23d14561' points='1203 546 1552 900 876 900'/%3E%3Cpolygon fill='%23af5f6c' points='1203 546 1552 900 1162 900'/%3E%3Cpolygon fill='%23ce497b' points='641 695 886 900 367 900'/%3E%3Cpolygon fill='%23a53d63' points='587 900 641 695 886 900'/%3E%3Cpolygon fill='%23c63091' points='1710 900 1401 632 1096 900'/%3E%3Cpolygon fill='%23a76b8d' points='1710 900 1401 632 1365 900'/%3E%3Cpolygon fill='%23c588c5' points='1210 900 971 687 725 900'/%3E%3Cpolygon fill='%23752475' points='943 900 1210 900 971 687'/%3E%3C/svg%3E");
-background-attachment: fixed;
-background-size: cover;
-  color: black;
+  width: 100%;
+  height: 100%;
+  background-color: var(--dark-first);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='250' height='30' viewBox='0 0 1000 120'%3E%3Cg fill='none' stroke='%23222' stroke-width='10' %3E%3Cpath d='M-500 75c0 0 125-30 250-30S0 75 0 75s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 45c0 0 125-30 250-30S0 45 0 45s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 105c0 0 125-30 250-30S0 105 0 105s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 15c0 0 125-30 250-30S0 15 0 15s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500-15c0 0 125-30 250-30S0-15 0-15s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 135c0 0 125-30 250-30S0 135 0 135s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3C/g%3E%3C/svg%3E");
+  color: var(--dark-second);
 }
 
-/* HEADER */
-
-header {
+header{
   background-color: var(--dark-first);
   animation: 1s ease-out 0s 1 slideInFromLeft;
-  position: sticky;
+  position: fixed;
   top: 0px;
+  z-index: 10;
 }
-  .img-fluid {
-    min-width: 45px;
-    max-width: 100px;
-  }
-  .nav-link {
-    color: var(--light-first);
-  }
-    .nav-link:hover{
-      color: var(--pop-first);
-    }
 
-/* MAIN */
+footer{
+  background-color: var(--dark-first);
+  animation: 1s ease-out 0s 1 slideInFromLeft;
+  position: static;
+  top: 0px;
+  z-index: 10;
+}
 
-h2 {
-  color: var(--pop-second);
+main {
+  width: 100vw;
+  height: 400vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+section{
+  width: 80vw;
+  height: auto;
+  color: var(--dark-second);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+
+  background-color: var(--light-first);
+}
+
+section .card {
+  width: 100%;
+  height: auto;
+}
+
+img {
+  max-width: 80vw;
+}
+
+p {
+  font-size: 1em;
+  letter-spacing: 0.2em;
+  line-height: 1;
+  text-align: justify;
+}
+
+.card-header{
+  text-align: center;
+}
+
+/* INDIVIDUALS */
+
+/* NavBar */
+.img-fluid {
+  min-width: 45px;
+  max-width: 100px;
+}
+.nav-link {
+  color: var(--light-first);
+}
+  .nav-link:hover{
+    color: var(--pop-first);
+  }
+
+/* Presentation*/
+#home aside {
+  display: flex;
+  flex-direction: row;
+}
+
+#home .card-img-top {
+  min-width: 15px;
+  max-width: 50px;
+}
+
+/* Services */
+#services .service-cards{
+  display: flex;
+  flex-flow: row wrap;
+}
+
+#services figure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  font-weight: 600;
+  font-size: 0.7rem;
+  letter-spacing:0.2em;
+}
+
+#services img {
+  width: 40vw;
+  height: 40vw;
+
+  margin: 0.1em 0.2em 0.7em;
+
+  object-fit: cover;
+}
+
+#services img:hover{
+  opacity: 0.2em;
+}
+
+/* Forumulaire Devis */
+
+#form-devis form{
+  font-size: 0.8rem;
+}
+
+#checkboxes {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+button {
+  margin: 1rem 0.5rem;
+}
+
+/* INFOS et Contact */
+
+#contact-text{
+display: inline;
+letter-spacing: 0;
+}
+
+.far, 
+.fas{
+  margin-right: 2rem;
+  margin-bottom: 0.3rem;
+}
+
+
+footer div{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: flex-start;
+
+  color: var(--light-first);
+  letter-spacing: 0rem;
+  font-size: 0.8rem;
+  text-align: center;
+  margin: 2rem;
+}
+
+footer i {
+  margin: 0 0.3rem 0 0.8rem ;
 }

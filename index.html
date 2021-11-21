@@ -7,11 +7,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mon Site</title>
+    <!-- Font-Awesome -->
+    <script src="https://kit.fontawesome.com/0c07982b91.js" crossorigin="anonymous"></script>
     <!-- Favicon -->
-    <link rel="shortcut icon" href="/assets/img/corporate-logo-design-branding-identity-tv-film-production-company-dark-room-slovakia-3.jpeg" type="image/x-icon"/>
+    <link   rel="shortcut icon" href="/assets/Logo/corporate-logo-design-branding-identity-tv-film-production-company-dark-room-slovakia-3.jpeg" type="image/x-icon"/>
     <!-- .... CSS -->
-    <link  href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"/>
-    <link rel="stylesheet" href="/CSS/style.css" />
+    <link   rel="stylesheet"    href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"/>
+    <link   rel="stylesheet"    href="/CSS/style.css" />
   </head>
 
 
@@ -23,13 +25,13 @@
     <header class="d-flex justify-content-between">
         <!-- LOGO -->
       <div id="logo">
-        <img src="/assets/img/corporate-logo-design-branding-identity-tv-film-production-company-dark-room-slovakia-3.jpeg"  alt="Logo" class="img-fluid"  />
+        <img src="/assets/Logo/corporate-logo-design-branding-identity-tv-film-production-company-dark-room-slovakia-3.jpeg"  alt="Logo" class="img-fluid"  />
       </div>
         <!--  NAV LINKS-->
       <ul class="nav align-items-center">
         <li class="nav-item"><a class="nav-link" href="#home">    Présentation</a></li>
         <li class="nav-item"><a class="nav-link" href="#services">Services    </a></li>
-        <li class="nav-item"><a class="nav-link" href="#estimate">Devis       </a></li>
+        <li class="nav-item"><a class="nav-link" href="#form-devis">Devis       </a></li>
         <li class="nav-item"><a class="nav-link" href="#info">    Informations</a></li>
       </ul>
     </header>
@@ -40,106 +42,109 @@
 
 
       <!-- SECTION PRESENTATION -->
-      <section id="home">
-        <article class="">
-          <h1>Votre solution Audio-Visuelle</h1>
-
-          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus accusantium nulla sapiente eveniet fuga commodi aspernatur ipsum quasi ipsam molestias quo, neque animi? Aut labore atque nisi numquam voluptatum obcaecati nesciunt ab, quia modi minima laudantium veniam odit temporibus nihil doloremque quam similique harum optio repellendus, vitae necessitatibus libero. Dignissimos distinctio id impedit error temporibus nam autem eaque ex eos.</p>
-        </article>
-
-        <aside class="">
-            <div class="card card-01">
-              <figure>
-                <img src="" alt="">
-                <figcaption></figcaption>
-              </figure>
-            </div>
-            <div class="card card-03">
-              <figure>
-                <img src="" alt="">
-                <figcaption></figcaption>
-              </figure>
-            </div>
-            <div class="card card-02">
-              <figure>
-                <img src="" alt="">
-                <figcaption></figcaption>
-              </figure>
-            </div>
-        </aside>
+      <section id="home" class="card m-5 ">
+       <div class="card text-dark bg-light m-3 p-4">
+        <h2 class="card-header">PRESENTATION</h2>
+          <article class="card-body">
+            <h1>                  Votre solution Audio-Visuelle</h1>
+            <p  class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis voluptas ullam autem.</p>
+          </article>
+          <!-- <aside class="card text-center">
+              <div class="card card-01">
+                <figure class = ''>
+                  <img class="card-img-top" src="/assets/img/Avis_Google/Photo_profils/profil-01.jpeg" alt="">
+                </figure>
+                <article>
+                  <section class="card-header"><span class="card-title">&#9733 &#9733 &#9733</span></section>
+                  <section class="card-body">
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, ipsam. Ut omnis et alias laudantium?</p>
+                  </section>
+                  <div class="card-footer text-muted">
+                    2 days ago
+                  </div>
+                </article>
+              </div>
+          </aside> -->
+       </div>
 
       </section>
 
 
       <!-- SECTION SERVICES -->
-      <section id="services">
-        <div class="gallery"><figure class=""><figcaption></figcaption></figure></div>
-        <div class="service-cards">
-          <figure>
-            <figcaption>Soborisation</figcaption>
-          </figure>
-          <figure>
-            <figcaption>Lumiere</figcaption>
-          </figure>
-          <figure>
-            <figcaption>Captation</figcaption>
-          </figure>
-          <figure>
-            <figcaption>Montage</figcaption>
-          </figure>
+      <section id="services" class='card m-5'>
+        <div class="card text-dark bg-light m-3 p-4">
+          <h2   class="card-header">SERVICE</h2>
+          <div  class="card-body gallery"><figure class=""><figcaption></figcaption></figure></div>
+          <div  class="card-body service-cards">
+            <figure>
+              <figcaption>Sonorisation</figcaption>
+              <img src="/assets/img/Gallerie/mix.jpeg" class="img-fluid img-thumbnail" alt="Console de mixage">
+            </figure>
+            <figure>
+              <figcaption>Lumiere</figcaption>
+              <img src="/assets/img/Gallerie/concert.jpeg" class="img-fluid img-thumbnail" alt="Console de mixage">
+            </figure>
+            <figure>
+              <figcaption>Captation</figcaption>
+              <img src="/assets/img/Gallerie/shoot-02.jpeg" class="img-fluid img-thumbnail" alt="Console de mixage">
+            </figure>
+            <figure>
+              <figcaption>Montage</figcaption>
+              <img src="/assets/img/Gallerie/montage01.jpeg" class="img-fluid img-thumbnail" alt="Console de mixage">
+            </figure>
+          </div>
         </div>
       </section>
 
 
       <!-- SECTION DEVIS -->
-      <section id="estimate">
-        <form action="POST">
-          <fieldset>
-            <legend>Vos Coordonnées</legend>
-            <label>Nom : <input placeholder="Nom" required  type="text" name="form-name" value=""></label>
-            <label>Prénom : <input placeholder="Prénom" required  type="text" name="form-first-name" value=""></label>
-            <label>Mail : <input placeholder="Email" required  type="email" name="form-mail" value=""></label>
-            <label>Tel. : <input placeholder="Téléphone" required  type="tel" size="10" name="form-phone" value=""></label>
-          </fieldset>
-
-          <fieldset>
-            <legend>Prestation</legend>
-              <div class="checkbox checkbox1">
-                <label><input type="checkbox" name="sonorisation" id="">Sonorisation</label>
-              </div>
-              <div class="checkbox checkbox2">
-                <label><input type="checkbox" name="lumiere" id="">Lumiere</label>
-              </div>
-              <div class="checkbox checkbox3">
-                <label><input type="checkbox" name="captation" id="">Captation</label>
-              </div>
-              <div class="checkbox checkbox4">
-                <label><input type="checkbox" name="montage" id="">Montage</label>
-              </div>
-          </fieldset>
-
-          <fieldset>
-            <legend>Commentaires</legend>
-            <textarea id="story" name="story" rows="5" cols="33" placeholder="Entrez votrs commentaire..." autocapitalize="sentences" maxlength="500"></textarea>
-          </fieldset>
-        </form>
+      <section id="form-devis" class='card m-5'>
+        <div class="card text-dark bg-light m-3 p-4">
+          <h2 class="card-header">DEVIS</h2>
+          <form class="card-body " action="POST">
+            <fieldset>
+              <legend>Vos Coordonnées</legend>
+              <div class="form-floating mb-1"><input class="form-control" placeholder="Nom"      required  type="text"   name="form-name"         value=""><label for="floatingInput">Nom      </label></div>
+              <div class="form-floating mb-1"><input class="form-control" placeholder="Prénom"   required  type="text"   name="form-first-name"   value=""><label for="floatingInput">Prénom   </label></div>
+              <div class="form-floating mb-1"><input class="form-control" placeholder="Email"    required  type="email"  name="form-mail"         value=""><label for="floatingInput">Email    </label></div>
+              <div class="form-floating mb-1"><input class="form-control" placeholder="Téléphone"required  type="tel"    name="form-phone"        value="" size="10"><label for="floatingInput">Téléphone</label></div>
+            </fieldset>
+            <fieldset  id="checkboxes">
+              <legend>Type de Prestation</legend>
+                <div  class="mb-1 form-check">
+                  <label  class="form-check-label"> <input type="checkbox" class="form-check-input"   name="sonorisation" id="">Sonorisation</label>
+                </div>
+                <div  class="mb-1 form-check">
+                  <label   class="form-check-label"><input type="checkbox" class="form-check-input"   name="lumiere"     id="">Lumiere</label>
+                </div>
+                <div  class="mb-1 form-check">
+                  <label   class="form-check-label"><input type="checkbox" class="form-check-input"   name="captation"   id="">Captation</label>
+                </div>
+                <div  class="mb-1 form-check">
+                  <label  class="form-check-label"><input type="checkbox"  class="form-check-input"   name="montage"    id="">Montage</label>
+                </div>
+            </fieldset>
+            <fieldset class="form-floating">
+              <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+              <label for="floatingTextarea">Ajouter un commentaire</label>
+            </fieldset>
+            <button type="submit" class="btn btn-primary">  Submit  </button>
+            <button type="reset"  class="btn btn-secondary"> Effacer  </button>
+          </form>
+        </div>
       </section>
 
 
       <!-- SECTION INFOS ET CONTACTS -->
-      <section class="info">
-        <h2>Informations</h2>
-        <div class="contact-us">
-          <figure>
-            <figcaption></figcaption>
-          </figure>
-          <aside></aside>
-        </div>
-        <div class="find-us">
-          <figure>
-            <figcaption></figcaption>
-            <aside></aside>
-          </figure>
+      <section id="info" class='card m-5'>
+        <div class="card">
+          <div class="card-body">
+            <h2 class="card-title">Contacts</h2>
+            <div class="contact"><i class="far fa-paper-plane"></i><p id="contact-text" class="card-text">04 00 00 39 39</p></div>
+            <div class="contact"><i class="fas fa-phone-alt"></i>  <p id="contact-text" class="card-text">contact@dark-room.mail</p></div>
+            <p class="card-text"><small class="text-muted">Trouvez-nous :</small></p>
+          </div>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d722.6144402557672!2d3.946653246282636!3d43.57618067957006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12b6ac29a1ed0e77%3A0x12bff7420e0ee1bd!2sDiginamic%20Montpellier!5e0!3m2!1sen!2sfr!4v1637442570128!5m2!1sen!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" class="card-img-bottom"></iframe>
         </div>
       </section>
 </main>
@@ -148,20 +153,9 @@
 
 
     <footer>
-      <p>© DWAPS Michael - 2021</p>
       <div>
-        Icons made by
-        <a href="https://www.flaticon.com/authors/secret-studio" title="Secret Studio">
-          Secret Studio
-        </a>
-        from
-        <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com </a>
-      </div>
-      <div>
-        Logo Image source:
-        <a href="http://https://www.logo-designer.co/dev/lights-camera-action-dark-room/">
-          Logo Designer
-        </a>
+        <p>© Maxime TAMBURRINI  - 2021</p>
+        <i class="fab fa-github"></i><p> maxiim3</p>
       </div>
     </footer>
   </body>
