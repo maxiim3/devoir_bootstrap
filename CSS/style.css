@@ -15,6 +15,7 @@
   --pop-first: #fca311;
   --pop-second: #fb8500;
   --light-first: #e5e5e5;
+  --light-first-50percent: #e5e5e5e8;
   --light-second: #ffffff;
 }
 
@@ -49,25 +50,22 @@ body {
   
 }
 
-main {
+.main-container {
   /* box size */
-  z-index: 1;
   width: 100vw;
-  height: 400vh;
+  height: auto;
   /* behaviour */
   box-sizing: border-box;
   display: flex;
-  align-items: center;
   flex-direction: column;
-  justify-content: space-around;
+  align-items: center;
+  justify-content: flex-start;
 }
 
 footer{
-  /* box size */
-  top: 0px;
-  z-index: 10;
   /* behaviour */
   position: static;
+  height: 3em;
   /* style */
   background-color: var(--dark-first);
 }
@@ -86,18 +84,13 @@ p {
   text-align: justify;
 }
 
-img {
-  /* box size */
-  /* max-width: 80vw; */
 
-}
 
-/* ========= CARD TEMPLATE GLOBAL */
+/* ========= Template general de du containe card : main-container */
 .card-border {
   /* box size */
   z-index: 1;
   width: 100vw;
-  height: 100vh;
   padding: 0% 0%;
   box-sizing: content-box;
   /* behaviour */
@@ -110,7 +103,7 @@ img {
 .card-content{
   /* box size */
   width: 90%;
-  height: 100%;
+  height: auto;
   box-sizing: border-box;
   /* behaviour */
   display: flex;
@@ -119,11 +112,12 @@ img {
   align-items: center;
   /* style */
   color: var(--dark-second);
-  background-color: var(--light-first);
+  background-color: var(--light-first-50percent);
 }
 
-.card-content header {
+.card-content .card-header {
   width: 100%;
+  box-shadow: 0px 0px 15px var(--dark-second) ;
 }
 .card-content article.card-body {
   /* box size */
@@ -133,10 +127,10 @@ img {
 
 
 
-/* ========= INDIVIDUALS */
+/* ========= INDIVIDUALS ELEMENTS*/
 
 
-/* SECTION -> HEADER */
+/* SECTION -> HEADER et Navbar */
 
 .nav-bar{
   /* box size */
@@ -144,20 +138,31 @@ img {
   position: sticky;
   top: 0;
   z-index: 9;
-  margin-bottom: 3rem;
-  /* behaviour */
   /* style */
   background-color: var(--dark-first);
   animation: 1s ease-out 0s 1 slideInFromTop;
 }
 
-/* logo */
+
 .img-fluid {
   min-width: 45px;
   max-width: 100px;
 }
 
-/* Navbar */
+
+.nav-bar .nav{
+  flex-direction: column;
+  line-height: 5px;
+  text-align: right;
+
+}
+
+@media screen  and (min-width: 520px) {
+	.nav-bar .nav {
+    flex-direction: row;
+	}
+}
+
 .nav-link {
   color: var(--light-first);
 }
@@ -167,23 +172,12 @@ img {
 }
 
 
-
 /* SECTION -> Presentation*/
 
-#home aside {
-  display: flex;
-  flex-direction: row;
-}
-#home .card-img-top {
-  min-width: 15px;
-  max-width: 50px;
-}
-
-
-
 /* SECTION -> Services */
-
-
+#services{
+width: 90%;
+}
 /* SECTION -> Forumulaire Devis */
 #form-devis form{
   font-size: 0.8rem;
@@ -200,6 +194,14 @@ button {
 }
 
 /* SECTION -> Contact */
+#info .card-body {
+  margin: 0 auto;
+
+}
+.contact{
+  width: max-content;
+  margin: 0 auto;
+}
 
 #contact-text{
 display: inline;
@@ -212,20 +214,38 @@ letter-spacing: 0;
   margin-bottom: 0.3rem;
 }
 
-
-footer div{
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-  align-items: flex-start;
-
-  color: var(--light-first);
-  letter-spacing: 0rem;
-  font-size: 0.8rem;
-  text-align: center;
-  margin: 2rem;
+/* maps */
+.google-maps{
+  width: 80%;
+  height: auto;
+  margin: 0 auto;
 }
 
-footer i {
-  margin: 0 0.3rem 0 0.8rem ;
+/* SECTION -> Footer */
+footer div{
+  height: auto;
+  color: var(--light-first);
+  letter-spacing: 0rem;
+  font-size: 0.1rem;
+  text-align: center;
+  /* margin: 2rem; */
+}
+
+footer p {
+  text-align: center;  
+  margin: 0 auto;
+}
+
+
+.sticky-icn{
+  width: 100vh;
+  height: 100vh;
+  position: fixed;
+  z-index: 20;
+}
+
+#square {
+  width: 35px;
+  height: 35px;
+  color: red;
 }
