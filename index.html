@@ -40,7 +40,6 @@
 
     <!-- ........ MAIN CONTAINER ........ -->
     <main class='main-container'>
-
       <!-- SECTION PRESENTATION -->
       <div class="card-border" id="home">
         <section class="card m-4 card-content ">
@@ -49,14 +48,14 @@
           </header>
           <article class="card-body">
               <h3>Votre solution Broadcast</h3>
-              <p  class="card-text"><strong>A LIRE : </strong> Ce site est un site fictif d'une entreprise de broadcast. J'espere que mon code n'est pas trop en basard et seras lisible. J'ais mis pas mal de commentaires utiles. Dans le CSS sont implémentés les éléments généraux. Puis la template des cards. Ensuite tu trouveras les éléments individuels dans 'Individual Elements', ceux ci sont implememnté dans l'ordre d'arborescence HTML.
+              <p  class="card-text "><strong>A LIRE : </strong> Ce site est un site fictif d'une entreprise de broadcast. J'espere que mon code n'est pas trop en basard et seras lisible. J'ais mis pas mal de commentaires utiles. Dans le CSS sont implémentés les éléments généraux. Puis la template des cards. Ensuite tu trouveras les éléments individuels dans 'Individual Elements', ceux ci sont implememnté dans l'ordre d'arborescence HTML.
               </p>
           </article>
         </section>
       </div>
 
 
-      <!-- SECTION SERVICES -->
+      <!-- SECTION CAROUSEL PRESENTANT LES SERVICES -->
       <div class="card-border" id="services">
         <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
           <div class="carousel-indicators">
@@ -66,20 +65,20 @@
           </div>
           <div class="carousel-inner">
             <div class="carousel-item active">
-              <img src="/assets/img/Gallerie/broadcast.jpeg" class="d-block w-100" alt="...">
+              <img src="/assets/img/Gallerie/broadcast.jpeg" class="d-block w-100" alt="la broadcast c'est cool..">
               <div class="carousel-caption d-none d-md-block">
                 <h2>NOS SERVICES BORADCAST</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis dolorem veritatis vel mollitia, in dolores!</p>
               </div>
             </div>
             <div class="carousel-item">
-              <img src="/assets/img/Gallerie/mix.jpeg" class="d-block w-100" alt="...">
+              <img src="/assets/img/Gallerie/mix.jpeg" class="d-block w-100" alt="une console de mixage trop cool">
               <div class="carousel-caption d-none d-md-block">
                 <h2>NOS SERVICES DE SONORISATION</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis dolorem veritatis vel mollitia, in dolores!</p>                </div>
             </div>
             <div class="carousel-item">
-              <img src="/assets/img/Gallerie/montage01.jpeg" class="d-block w-100" alt="...">
+              <img src="/assets/img/Gallerie/montage01.jpeg" class="d-block w-100" alt="Le montage c'est cool">
               <div class="carousel-caption d-none d-md-block">
                 <h2>NOS SERVICES DE MONTAGE</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis dolorem veritatis vel mollitia, in dolores!</p>              </div>
@@ -104,15 +103,15 @@
             <h2>DEVIS</h2>
           </header>
           <article class="card-body">
-            <form class="card-body " action="POST">
+            <form class="card-body " action="/assets/img/Maps/ma-page.html">
               <fieldset>
                 <legend>Vos Coordonnées</legend>
                 <div class="form-floating mb-1"><input class="form-control" placeholder="Nom"      required  type="text"   name="form-name"         value=""><label for="floatingInput">Nom      </label></div>
                 <div class="form-floating mb-1"><input class="form-control" placeholder="Prénom"   required  type="text"   name="form-first-name"   value=""><label for="floatingInput">Prénom   </label></div>
                 <div class="form-floating mb-1"><input class="form-control" placeholder="Email"    required  type="email"  name="form-mail"         value=""><label for="floatingInput">Email    </label></div>
-                <div class="form-floating mb-1"><input class="form-control" placeholder="Téléphone"required  type="tel"    name="form-phone"        value="" size="10"><label for="floatingInput">Téléphone</label></div>
+                <div class="form-floating mb-1"><input class="form-control" placeholder="Téléphone"required  type="tel"   minlength="10" maxlength="12" name="form-phone"        value=""><label for="floatingInput">Téléphone</label></div>
               </fieldset>
-              <fieldset  id="checkboxes">
+              <fieldset  id="checkboxes" required>
                 <legend>Type de Prestation</legend>
                   <div  class="mb-1 form-check">
                     <label  class="form-check-label"> <input type="checkbox" class="form-check-input"   name="sonorisation" id="">Sonorisation</label>
@@ -155,15 +154,10 @@
       </div>
       
     </main>
-
-      <div class="sticky-icn">
-        <div id="square"></div>
-      </div>
-
     <!-- ........ FOOTER CONTAINER ........ -->
     <footer>
       <div>
-        <p>2021 © - <i class="fab fa-github"></i>maxiim3</p>
+        <a class="nav-link" target="_blank" href="https://github.com/maxiim3"><p>2021 © - <i class="fab fa-github"></i>maxiim3</p></a>
       </div>
     </footer>
 
