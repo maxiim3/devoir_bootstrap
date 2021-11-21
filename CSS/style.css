@@ -1,9 +1,14 @@
-/* SETUP */
+/*
+        Devoir HTML-CSS-BOOTSTRAP POUR DIGINAMIC - Novembre 2021 
+*/
+
+/* ========= SETUP */
 
 :root {
   scroll-behavior: smooth;
   width: 100%;
-  height: 100%;
+  height: auto;
+
   /* BASED COLOR VARIABLES */
   --dark-first: #000000;
   --dark-second: #14213d;
@@ -13,11 +18,11 @@
   --light-second: #ffffff;
 }
 
-/* ANIMATION */
+/* KEY FRAMES ANIMATION */
 
-@keyframes slideInFromLeft {
+@keyframes slideInFromTop {
   0% {
-    transform: translateX(-100%);
+    transform: translateY(-100%);
     opacity: 0;
   }
   75%{
@@ -29,131 +34,157 @@
   }
 }
 
-/* GENERAL */
+/* ========== GENERAL */
 
 body {
+  /* box size */
   width: 100%;
-  height: 100%;
+  height: auto;
+  /* behaviour */
+  box-sizing: border-box;
+  /* style */
+  color: var(--dark-second);
   background-color: var(--dark-first);
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='250' height='30' viewBox='0 0 1000 120'%3E%3Cg fill='none' stroke='%23222' stroke-width='10' %3E%3Cpath d='M-500 75c0 0 125-30 250-30S0 75 0 75s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 45c0 0 125-30 250-30S0 45 0 45s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 105c0 0 125-30 250-30S0 105 0 105s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 15c0 0 125-30 250-30S0 15 0 15s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500-15c0 0 125-30 250-30S0-15 0-15s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 135c0 0 125-30 250-30S0 135 0 135s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3C/g%3E%3C/svg%3E");
-  color: var(--dark-second);
-}
-
-header{
-  background-color: var(--dark-first);
-  animation: 1s ease-out 0s 1 slideInFromLeft;
-  position: fixed;
-  top: 0px;
-  z-index: 10;
-}
-
-footer{
-  background-color: var(--dark-first);
-  animation: 1s ease-out 0s 1 slideInFromLeft;
-  position: static;
-  top: 0px;
-  z-index: 10;
+  
 }
 
 main {
+  /* box size */
+  z-index: 1;
   width: 100vw;
   height: 400vh;
+  /* behaviour */
+  box-sizing: border-box;
   display: flex;
+  align-items: center;
   flex-direction: column;
   justify-content: space-around;
-  align-items: center;
 }
 
-section{
-  width: 80vw;
-  height: auto;
-  color: var(--dark-second);
-
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
-
-  background-color: var(--light-first);
+footer{
+  /* box size */
+  top: 0px;
+  z-index: 10;
+  /* behaviour */
+  position: static;
+  /* style */
+  background-color: var(--dark-first);
 }
 
-section .card {
-  width: 100%;
-  height: auto;
-}
-
-img {
-  max-width: 80vw;
-}
-
-p {
-  font-size: 1em;
-  letter-spacing: 0.2em;
-  line-height: 1;
-  text-align: justify;
-}
-
-.card-header{
+h2{
   text-align: center;
 }
 
-/* INDIVIDUALS */
+p {
+  /* box size */
+  letter-spacing: 0.2em;
+  line-height: 1;
+  /* behaviour */
+  /* style */
+  font-size: 1rem;
+  text-align: justify;
+}
 
-/* NavBar */
+img {
+  /* box size */
+  /* max-width: 80vw; */
+
+}
+
+/* ========= CARD TEMPLATE GLOBAL */
+.card-border {
+  /* box size */
+  z-index: 1;
+  width: 100vw;
+  height: 100vh;
+  padding: 0% 0%;
+  box-sizing: content-box;
+  /* behaviour */
+  display: flex;
+  align-items: center;
+  flex-flow: column nowrap;  
+  justify-content:space-around;
+}
+
+.card-content{
+  /* box size */
+  width: 90%;
+  height: 100%;
+  box-sizing: border-box;
+  /* behaviour */
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: baseline;
+  align-items: center;
+  /* style */
+  color: var(--dark-second);
+  background-color: var(--light-first);
+}
+
+.card-content header {
+  width: 100%;
+}
+.card-content article.card-body {
+  /* box size */
+  width: 100%;
+  height: 100%;
+}
+
+
+
+/* ========= INDIVIDUALS */
+
+
+/* SECTION -> HEADER */
+
+.nav-bar{
+  /* box size */
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 9;
+  margin-bottom: 3rem;
+  /* behaviour */
+  /* style */
+  background-color: var(--dark-first);
+  animation: 1s ease-out 0s 1 slideInFromTop;
+}
+
+/* logo */
 .img-fluid {
   min-width: 45px;
   max-width: 100px;
 }
+
+/* Navbar */
 .nav-link {
   color: var(--light-first);
 }
-  .nav-link:hover{
-    color: var(--pop-first);
-  }
 
-/* Presentation*/
+.nav-link:hover{
+  color: var(--pop-first);
+}
+
+
+
+/* SECTION -> Presentation*/
+
 #home aside {
   display: flex;
   flex-direction: row;
 }
-
 #home .card-img-top {
   min-width: 15px;
   max-width: 50px;
 }
 
-/* Services */
-#services .service-cards{
-  display: flex;
-  flex-flow: row wrap;
-}
 
-#services figure {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
 
-  font-weight: 600;
-  font-size: 0.7rem;
-  letter-spacing:0.2em;
-}
+/* SECTION -> Services */
 
-#services img {
-  width: 40vw;
-  height: 40vw;
 
-  margin: 0.1em 0.2em 0.7em;
-
-  object-fit: cover;
-}
-
-#services img:hover{
-  opacity: 0.2em;
-}
-
-/* Forumulaire Devis */
-
+/* SECTION -> Forumulaire Devis */
 #form-devis form{
   font-size: 0.8rem;
 }
@@ -168,7 +199,7 @@ button {
   margin: 1rem 0.5rem;
 }
 
-/* INFOS et Contact */
+/* SECTION -> Contact */
 
 #contact-text{
 display: inline;

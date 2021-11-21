@@ -22,136 +22,118 @@
 
 
     <!-- ........ HEADER ........ -->
-    <header class="d-flex justify-content-between">
-        <!-- LOGO -->
-      <div id="logo">
-        <img src="/assets/Logo/corporate-logo-design-branding-identity-tv-film-production-company-dark-room-slovakia-3.jpeg"  alt="Logo" class="img-fluid"  />
-      </div>
-        <!--  NAV LINKS-->
-      <ul class="nav align-items-center">
-        <li class="nav-item"><a class="nav-link" href="#home">    Présentation</a></li>
-        <li class="nav-item"><a class="nav-link" href="#services">Services    </a></li>
-        <li class="nav-item"><a class="nav-link" href="#form-devis">Devis       </a></li>
-        <li class="nav-item"><a class="nav-link" href="#info">    Informations</a></li>
-      </ul>
-    </header>
-
+    <nav class="nav-bar">
+      <header class="d-flex justify-content-between">
+          <!-- LOGO -->
+        <div id="logo">
+          <img src="/assets/Logo/corporate-logo-design-branding-identity-tv-film-production-company-dark-room-slovakia-3.jpeg"  alt="Logo" class="img-fluid"  />
+        </div>
+          <!--  NAV LINKS-->
+        <ul class="nav align-items-center">
+          <li class="nav-item"><a class="nav-link" href="#home">    Présentation</a></li>
+          <li class="nav-item"><a class="nav-link" href="#services">Services    </a></li>
+          <li class="nav-item"><a class="nav-link" href="#form-devis">Devis       </a></li>
+          <li class="nav-item"><a class="nav-link" href="#info">    Informations</a></li>
+        </ul>
+      </header>
+    </nav>
 
     <!-- ........ MAIN CONTAINER ........ -->
     <main>
 
 
       <!-- SECTION PRESENTATION -->
-      <section id="home" class="card m-5 ">
-       <div class="card text-dark bg-light m-3 p-4">
-        <h2 class="card-header">PRESENTATION</h2>
+      <div class="card-border" id="home">
+        <section class="card m-4 card-content ">
+          <header class="card-header text-dark bg-light m-3 p-4">
+            <h2>PRESENTATION</h2>
+          </header>
           <article class="card-body">
-            <h1>                  Votre solution Audio-Visuelle</h1>
-            <p  class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis voluptas ullam autem.</p>
+              <h3>Votre solution Audio-Visuelle</h3>
+              <p  class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis voluptas ullam autem.
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur veritatis, obcaecati asperiores eligendi totam omnis rem nulla. Amet deleniti pariatur quae voluptatibus officia accusantium cumque commodi cum nisi sunt itaque optio at eum dolore, dolorem assumenda qui exercitationem. Esse quaerat exercitationem molestiae aliquam eos eligendi excepturi sint accusamus dolores maxime?
+              </p>
           </article>
-          <!-- <aside class="card text-center">
-              <div class="card card-01">
-                <figure class = ''>
-                  <img class="card-img-top" src="/assets/img/Avis_Google/Photo_profils/profil-01.jpeg" alt="">
-                </figure>
-                <article>
-                  <section class="card-header"><span class="card-title">&#9733 &#9733 &#9733</span></section>
-                  <section class="card-body">
-                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, ipsam. Ut omnis et alias laudantium?</p>
-                  </section>
-                  <div class="card-footer text-muted">
-                    2 days ago
-                  </div>
-                </article>
-              </div>
-          </aside> -->
-       </div>
-
-      </section>
+        </section>
+      </div>
 
 
       <!-- SECTION SERVICES -->
-      <section id="services" class='card m-5'>
-        <div class="card text-dark bg-light m-3 p-4">
-          <h2   class="card-header">SERVICE</h2>
-          <div  class="card-body gallery"><figure class=""><figcaption></figcaption></figure></div>
-          <div  class="card-body service-cards">
-            <figure>
-              <figcaption>Sonorisation</figcaption>
-              <img src="/assets/img/Gallerie/mix.jpeg" class="img-fluid img-thumbnail" alt="Console de mixage">
-            </figure>
-            <figure>
-              <figcaption>Lumiere</figcaption>
-              <img src="/assets/img/Gallerie/concert.jpeg" class="img-fluid img-thumbnail" alt="Console de mixage">
-            </figure>
-            <figure>
-              <figcaption>Captation</figcaption>
-              <img src="/assets/img/Gallerie/shoot-02.jpeg" class="img-fluid img-thumbnail" alt="Console de mixage">
-            </figure>
-            <figure>
-              <figcaption>Montage</figcaption>
-              <img src="/assets/img/Gallerie/montage01.jpeg" class="img-fluid img-thumbnail" alt="Console de mixage">
-            </figure>
-          </div>
-        </div>
-      </section>
+      <div class="card-border" id="services">
+        <section  class='card m-4 card-content'>
+          <header class="card-header text-dark bg-light m-3 p-4">
+            <h2>SERVICES</h2>
+          </header>
+          <article class="cards-body slider">
+
+
+
+          </article>
+        </section>
+      </div>
 
 
       <!-- SECTION DEVIS -->
-      <section id="form-devis" class='card m-5'>
-        <div class="card text-dark bg-light m-3 p-4">
-          <h2 class="card-header">DEVIS</h2>
-          <form class="card-body " action="POST">
-            <fieldset>
-              <legend>Vos Coordonnées</legend>
-              <div class="form-floating mb-1"><input class="form-control" placeholder="Nom"      required  type="text"   name="form-name"         value=""><label for="floatingInput">Nom      </label></div>
-              <div class="form-floating mb-1"><input class="form-control" placeholder="Prénom"   required  type="text"   name="form-first-name"   value=""><label for="floatingInput">Prénom   </label></div>
-              <div class="form-floating mb-1"><input class="form-control" placeholder="Email"    required  type="email"  name="form-mail"         value=""><label for="floatingInput">Email    </label></div>
-              <div class="form-floating mb-1"><input class="form-control" placeholder="Téléphone"required  type="tel"    name="form-phone"        value="" size="10"><label for="floatingInput">Téléphone</label></div>
-            </fieldset>
-            <fieldset  id="checkboxes">
-              <legend>Type de Prestation</legend>
-                <div  class="mb-1 form-check">
-                  <label  class="form-check-label"> <input type="checkbox" class="form-check-input"   name="sonorisation" id="">Sonorisation</label>
-                </div>
-                <div  class="mb-1 form-check">
-                  <label   class="form-check-label"><input type="checkbox" class="form-check-input"   name="lumiere"     id="">Lumiere</label>
-                </div>
-                <div  class="mb-1 form-check">
-                  <label   class="form-check-label"><input type="checkbox" class="form-check-input"   name="captation"   id="">Captation</label>
-                </div>
-                <div  class="mb-1 form-check">
-                  <label  class="form-check-label"><input type="checkbox"  class="form-check-input"   name="montage"    id="">Montage</label>
-                </div>
-            </fieldset>
-            <fieldset class="form-floating">
-              <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
-              <label for="floatingTextarea">Ajouter un commentaire</label>
-            </fieldset>
-            <button type="submit" class="btn btn-primary">  Submit  </button>
-            <button type="reset"  class="btn btn-secondary"> Effacer  </button>
-          </form>
-        </div>
-      </section>
+      <div class="card-border" id="form-devis">
+        <section class='card m-4 card-content'>
+          <header class="card-header text-dark bg-light m-3 p-4">
+            <h2>DEVIS</h2>
+          </header>
+          <article class="card-body">
+            <form class="card-body " action="POST">
+              <fieldset>
+                <legend>Vos Coordonnées</legend>
+                <div class="form-floating mb-1"><input class="form-control" placeholder="Nom"      required  type="text"   name="form-name"         value=""><label for="floatingInput">Nom      </label></div>
+                <div class="form-floating mb-1"><input class="form-control" placeholder="Prénom"   required  type="text"   name="form-first-name"   value=""><label for="floatingInput">Prénom   </label></div>
+                <div class="form-floating mb-1"><input class="form-control" placeholder="Email"    required  type="email"  name="form-mail"         value=""><label for="floatingInput">Email    </label></div>
+                <div class="form-floating mb-1"><input class="form-control" placeholder="Téléphone"required  type="tel"    name="form-phone"        value="" size="10"><label for="floatingInput">Téléphone</label></div>
+              </fieldset>
+              <fieldset  id="checkboxes">
+                <legend>Type de Prestation</legend>
+                  <div  class="mb-1 form-check">
+                    <label  class="form-check-label"> <input type="checkbox" class="form-check-input"   name="sonorisation" id="">Sonorisation</label>
+                  </div>
+                  <div  class="mb-1 form-check">
+                    <label   class="form-check-label"><input type="checkbox" class="form-check-input"   name="lumiere"     id="">Lumiere</label>
+                  </div>
+                  <div  class="mb-1 form-check">
+                    <label   class="form-check-label"><input type="checkbox" class="form-check-input"   name="captation"   id="">Captation</label>
+                  </div>
+                  <div  class="mb-1 form-check">
+                    <label  class="form-check-label"><input type="checkbox"  class="form-check-input"   name="montage"    id="">Montage</label>
+                  </div>
+              </fieldset>
+              <fieldset class="form-floating">
+                <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+                <label for="floatingTextarea">Ajouter un commentaire</label>
+              </fieldset>
+              <button type="submit" class="btn btn-primary">  Submit  </button>
+              <button type="reset"  class="btn btn-secondary"> Effacer  </button>
+            </form>
+          </article>
+        </section>
+      </div>
 
 
       <!-- SECTION INFOS ET CONTACTS -->
-      <section id="info" class='card m-5'>
-        <div class="card">
-          <div class="card-body">
+      <div class="card-border" id="info">
+        <section  class='card m-4 card-content'>
+          <header class="card-header text-dark bg-light m-3 p-4">
             <h2 class="card-title">Contacts</h2>
+          </header>
+          <article class="card-body">
             <div class="contact"><i class="far fa-paper-plane"></i><p id="contact-text" class="card-text">04 00 00 39 39</p></div>
             <div class="contact"><i class="fas fa-phone-alt"></i>  <p id="contact-text" class="card-text">contact@dark-room.mail</p></div>
             <p class="card-text"><small class="text-muted">Trouvez-nous :</small></p>
-          </div>
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d722.6144402557672!2d3.946653246282636!3d43.57618067957006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12b6ac29a1ed0e77%3A0x12bff7420e0ee1bd!2sDiginamic%20Montpellier!5e0!3m2!1sen!2sfr!4v1637442570128!5m2!1sen!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" class="card-img-bottom"></iframe>
-        </div>
-      </section>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d722.6144402557672!2d3.946653246282636!3d43.57618067957006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12b6ac29a1ed0e77%3A0x12bff7420e0ee1bd!2sDiginamic%20Montpellier!5e0!3m2!1sen!2sfr!4v1637442570128!5m2!1sen!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" class="card-img-bottom"></iframe>
+          </article>
+        </section>
+      </div>
 </main>
 
 
 
-
+    <!-- ........ FOOTER CONTAINER ........ -->
     <footer>
       <div>
         <p>© Maxime TAMBURRINI  - 2021</p>
